@@ -3,7 +3,7 @@
 This tool is a dedicated GUI designed to streamline the translation process for *Super Robot Wars NEO*. It manages the extraction, editing, mapping, and injection of text while ensuring byte compatibility with the original game files.
 
 ⚠️ Prerequisites (Before You Start)
-File Requirement: This tool requires the event.pac file to function. You must obtain this file directly from your copy of Super Robot Wars NEO. Place the event.pac file in the same folder as the scripts and GUI.
+File Requirement: This tool requires the mesbtl.pac file to function. You must obtain this file directly from your copy of Super Robot Wars NEO. Place the event.pac file in the same folder as the scripts and GUI.
 
 Python Installation: The tool is written in Python. Please ensure that Python is installed on your PC.
 
