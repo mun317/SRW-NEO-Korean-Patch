@@ -10,7 +10,7 @@ Python Installation: The tool is written in Python. Please ensure that Python is
 How to Run: 1. Open the Command Prompt (CMD).
 2. Navigate to the tool's folder.
 3. Type the following command and press Enter:
-bash python gui.py
+python gui.py
 
 ---
 
