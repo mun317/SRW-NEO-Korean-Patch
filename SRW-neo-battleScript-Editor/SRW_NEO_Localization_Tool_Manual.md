@@ -38,7 +38,8 @@ The localization process follows a numerical sequence. For a successful translat
 ### Step 5: Sum (Merge)
 - **Action:** Runs `4move.py`.
 - **Purpose:** Merges the optimized "Diet" translations back into the master database to ensure all changes are synchronized for the final build.
-
+Note:
+Step 5: Sum (Merge) updates the CSV database. After running this step, you must run Step 3: Inject again. If the "Diet" file is not generated (or is empty) after this final injection, it means no sentences exceed the byte limit. The complete cycle should be: Edit (Step 4) → Sum (Step 5) → Verify in Master Edit (Step 2) → Finalize with Inject (Step 3).
 ---
 
 ## 3. Editor Features & Controls
