@@ -2,6 +2,16 @@
 
 This tool is a dedicated GUI designed to streamline the translation process for *Super Robot Wars NEO*. It manages the extraction, editing, mapping, and injection of text while ensuring byte compatibility with the original game files.
 
+⚠️ Prerequisites (Before You Start)
+File Requirement: This tool requires the event.pac file to function. You must obtain this file directly from your copy of Super Robot Wars NEO. Place the event.pac file in the same folder as the scripts and GUI.
+
+Python Installation: The tool is written in Python. Please ensure that Python is installed on your PC.
+
+How to Run: 1. Open the Command Prompt (CMD).
+2. Navigate to the tool's folder.
+3. Type the following command and press Enter:
+bash python gui.py
+
 ---
 
 ## 1. Workflow Overview
@@ -38,10 +48,15 @@ The localization process follows a numerical sequence. For a successful translat
 ### Step 5: Sum (Merge)
 - **Action:** Runs `4move.py`.
 - **Purpose:** Merges the optimized "Diet" translations back into the master database to ensure all changes are synchronized for the final build.
-Note:
-Step 5: Sum (Merge) updates the CSV database. After running this step, you must run Step 3: Inject again. If the "Diet" file is not generated (or is empty) after this final injection, it means no sentences exceed the byte limit. The complete cycle should be: Edit (Step 4) → Sum (Step 5) → Verify in Master Edit (Step 2) → Finalize with Inject (Step 3).
----
 
+📌 Important Note on Workflow (Step 5)
+Step 5 (Sum/Merge) is for updating the database with your optimized "Diet" text.
+
+After running Step 5, you MUST run Step 3 (Inject) again.
+
+If the "Diet" file is not generated (or is empty) after the final injection, it means all sentences have successfully fit within the byte limit.
+
+Final Sequence: Edit (Step 4) → Sum (Step 5) → Verify in Master Edit (Step 2) → Finalize with Inject (Step 3).
 ## 3. Editor Features & Controls
 
 | Feature | Description |
